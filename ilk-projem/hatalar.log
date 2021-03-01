@@ -1,0 +1,4 @@
+[2021-02-28T12:30:19.836341+03:00] loglar.WARNING: Merhaba ben bir uyarıyım! [] []
+[2021-02-28T12:30:19.838305+03:00] loglar.ERROR: Ben de hatayım! [] []
+[2021-02-28T12:31:08.517340+03:00] loglar.WARNING: Merhaba ben bir uyarıyım! {"oAnkiIstek":"/auth kısmına geldi!"} []
+[2021-02-28T12:31:08.518204+03:00] loglar.ERROR: Ben de hatayım! [] []

@@ -1,0 +1,16 @@
+{
+	"name": "erayaydin/ilk-projem",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/erayaydin/placeholder-package.git"
+		}
+	],
+	"require": {
+		"monolog/monolog": "^2.1",
+		"guzzlehttp/guzzle": "^7.2",
+		"illuminate/support": "^8.29",
+		"erayaydin/placeholder": "^1.0"
+	},
+	"minimum-stability": "dev"
+}
