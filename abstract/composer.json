@@ -1,0 +1,17 @@
+{
+    "name": "eray/abstract",
+    "description": "",
+    "authors": [
+        {
+            "name": "Eray Aydın",
+            "email": "eray.aydin@ozguryazilim.com.tr"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Models\\": "models/",
+            "Lib\\": "lib/"
+        }
+    }
+}

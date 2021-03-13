@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+use App\Command\HelloWorldCommand;
+use Symfony\Component\Console\Application;
+
+require "vendor/autoload.php";
+
+$app = new Application();
+
+$app->add(new HelloWorldCommand());
+
+return $app->run();

